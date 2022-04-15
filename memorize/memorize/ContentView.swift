@@ -8,14 +8,23 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        Text("Hello, world!")
-            .padding()
+  
+  var content = ["😵‍💫", "👀", "😶‍🌫️"]
+  
+  var body: some View {
+    HStack {
+      ForEach(content, id: \.self) { element in
+        CardView(content: element)
+      }
     }
+    .foregroundColor(.red)
+    .padding()
+  }
 }
 
 struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+  static var previews: some View {
+    ContentView()
+      .preferredColorScheme(.dark)
+  }
 }
