@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5C25590528045A0A00454ECD /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C25590428045A0A00454ECD /* CardView.swift */; };
+		5C28F98C284A37DE002B84BC /* MemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C28F98B284A37DE002B84BC /* MemoryGame.swift */; };
+		5C28F98E284A3A25002B84BC /* MemoryGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C28F98D284A3A25002B84BC /* MemoryGameViewModel.swift */; };
 		5C9D2CC8280330B100F91734 /* memorizeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9D2CC7280330B100F91734 /* memorizeApp.swift */; };
 		5C9D2CCA280330B100F91734 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9D2CC9280330B100F91734 /* ContentView.swift */; };
 		5C9D2CCC280330B400F91734 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C9D2CCB280330B400F91734 /* Assets.xcassets */; };
@@ -16,6 +18,8 @@
 
 /* Begin PBXFileReference section */
 		5C25590428045A0A00454ECD /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		5C28F98B284A37DE002B84BC /* MemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGame.swift; sourceTree = "<group>"; };
+		5C28F98D284A3A25002B84BC /* MemoryGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGameViewModel.swift; sourceTree = "<group>"; };
 		5C9D2CC4280330B100F91734 /* memorize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = memorize.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C9D2CC7280330B100F91734 /* memorizeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = memorizeApp.swift; sourceTree = "<group>"; };
 		5C9D2CC9280330B100F91734 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +59,8 @@
 			children = (
 				5C9D2CC7280330B100F91734 /* memorizeApp.swift */,
 				5C9D2CC9280330B100F91734 /* ContentView.swift */,
+				5C28F98B284A37DE002B84BC /* MemoryGame.swift */,
+				5C28F98D284A3A25002B84BC /* MemoryGameViewModel.swift */,
 				5C25590428045A0A00454ECD /* CardView.swift */,
 				5C9D2CCB280330B400F91734 /* Assets.xcassets */,
 				5C9D2CCD280330B400F91734 /* Preview Content */,
@@ -142,7 +148,9 @@
 			files = (
 				5C9D2CCA280330B100F91734 /* ContentView.swift in Sources */,
 				5C25590528045A0A00454ECD /* CardView.swift in Sources */,
+				5C28F98C284A37DE002B84BC /* MemoryGame.swift in Sources */,
 				5C9D2CC8280330B100F91734 /* memorizeApp.swift in Sources */,
+				5C28F98E284A3A25002B84BC /* MemoryGameViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
