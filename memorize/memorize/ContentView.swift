@@ -9,28 +9,28 @@ import SwiftUI
 
 struct ContentView: View {
   
-  var content = ["😵‍💫", "👀", "😶‍🌫️", "😒", "☠️", "👻", "🤖", "🤡", "👽", "👺", "👹", "💩", "👿", "👾", "🤠", "👁"]
-  
-  @State var contentCount = 6
+  @ObservedObject var viewModel: MemoryGameViewModel
   
   var body: some View {
-    VStack {
-      ScrollView {
-        LazyVGrid(columns: [GridItem(.adaptive(minimum: 65))]) {
-          ForEach(content[0..<contentCount], id: \.self) { element in
-            CardView(content: element).aspectRatio(2/3, contentMode: .fit)
+    ScrollView {
+      LazyVGrid(columns: [GridItem(.adaptive(minimum: 65))]) {
+        ForEach(viewModel.cards) { card in
+          CardView(card: card).aspectRatio(2/3, contentMode: .fit).onTapGesture {
+            viewModel.choose(card)
           }
         }
       }
-      .foregroundColor(.red)
     }
+    .foregroundColor(.red)
     .padding(.horizontal)
-  } 
+  }
 }
 
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
-    ContentView()
+    let viewModel = MemoryGameViewModel()
+    
+    ContentView(viewModel: viewModel)
       .preferredColorScheme(.dark)
       .previewInterfaceOrientation(.portrait)
   }
