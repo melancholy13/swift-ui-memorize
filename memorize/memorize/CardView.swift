@@ -9,7 +9,11 @@ import SwiftUI
 
 struct CardView: View {
   
-  let card: MemoryGame<String>.Card
+  private let card: MemoryGameViewModel.Card
+  
+  init(_ card: MemoryGameViewModel.Card) {
+    self.card = card
+  }
   
   var body: some View {
     ZStack {
