@@ -11,9 +11,10 @@
 		5C28F98C284A37DE002B84BC /* MemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C28F98B284A37DE002B84BC /* MemoryGame.swift */; };
 		5C28F98E284A3A25002B84BC /* MemoryGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C28F98D284A3A25002B84BC /* MemoryGameViewModel.swift */; };
 		5C9D2CC8280330B100F91734 /* memorizeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9D2CC7280330B100F91734 /* memorizeApp.swift */; };
-		5C9D2CCA280330B100F91734 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9D2CC9280330B100F91734 /* ContentView.swift */; };
 		5C9D2CCC280330B400F91734 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C9D2CCB280330B400F91734 /* Assets.xcassets */; };
 		5C9D2CCF280330B400F91734 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C9D2CCE280330B400F91734 /* Preview Assets.xcassets */; };
+		5CE4371F2878C404009452A8 /* MemoryGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE4371E2878C404009452A8 /* MemoryGameView.swift */; };
+		5CE437212878C51B009452A8 /* Array + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE437202878C51B009452A8 /* Array + Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,9 +23,10 @@
 		5C28F98D284A3A25002B84BC /* MemoryGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGameViewModel.swift; sourceTree = "<group>"; };
 		5C9D2CC4280330B100F91734 /* memorize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = memorize.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C9D2CC7280330B100F91734 /* memorizeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = memorizeApp.swift; sourceTree = "<group>"; };
-		5C9D2CC9280330B100F91734 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5C9D2CCB280330B400F91734 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C9D2CCE280330B400F91734 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5CE4371E2878C404009452A8 /* MemoryGameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoryGameView.swift; sourceTree = "<group>"; };
+		5CE437202878C51B009452A8 /* Array + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array + Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +60,15 @@
 			isa = PBXGroup;
 			children = (
 				5C9D2CC7280330B100F91734 /* memorizeApp.swift */,
-				5C9D2CC9280330B100F91734 /* ContentView.swift */,
 				5C28F98B284A37DE002B84BC /* MemoryGame.swift */,
+				5CE4371E2878C404009452A8 /* MemoryGameView.swift */,
 				5C28F98D284A3A25002B84BC /* MemoryGameViewModel.swift */,
+				5CE437202878C51B009452A8 /* Array + Extensions.swift */,
 				5C25590428045A0A00454ECD /* CardView.swift */,
 				5C9D2CCB280330B400F91734 /* Assets.xcassets */,
 				5C9D2CCD280330B400F91734 /* Preview Content */,
 			);
-			path = memorize;
+			name = memorize;
 			sourceTree = "<group>";
 		};
 		5C9D2CCD280330B400F91734 /* Preview Content */ = {
@@ -146,7 +149,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C9D2CCA280330B100F91734 /* ContentView.swift in Sources */,
+				5CE4371F2878C404009452A8 /* MemoryGameView.swift in Sources */,
+				5CE437212878C51B009452A8 /* Array + Extensions.swift in Sources */,
 				5C25590528045A0A00454ECD /* CardView.swift in Sources */,
 				5C28F98C284A37DE002B84BC /* MemoryGame.swift in Sources */,
 				5C9D2CC8280330B100F91734 /* memorizeApp.swift in Sources */,
@@ -278,7 +282,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"memorize/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Preview Content\"";
 				DEVELOPMENT_TEAM = CLGLYY36KK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -307,7 +311,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"memorize/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Preview Content\"";
 				DEVELOPMENT_TEAM = CLGLYY36KK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
