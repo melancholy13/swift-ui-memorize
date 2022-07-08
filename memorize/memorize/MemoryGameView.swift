@@ -13,7 +13,7 @@ struct MemoryGameView: View {
   
   var body: some View {
     ScrollView {
-      LazyVGrid(columns: [GridItem(.adaptive(minimum: 65))]) {
+      LazyVGrid(columns: [GridItem(.adaptive(minimum: 100))]) {
         ForEach(viewModel.cards) { card in
           CardView(card).aspectRatio(2/3, contentMode: .fit).onTapGesture {
             viewModel.choose(card)

@@ -15,6 +15,7 @@
 		5C9D2CCF280330B400F91734 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C9D2CCE280330B400F91734 /* Preview Assets.xcassets */; };
 		5CE4371F2878C404009452A8 /* MemoryGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE4371E2878C404009452A8 /* MemoryGameView.swift */; };
 		5CE437212878C51B009452A8 /* Array + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE437202878C51B009452A8 /* Array + Extensions.swift */; };
+		5CE437232878C882009452A8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE437222878C882009452A8 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		5C9D2CCE280330B400F91734 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5CE4371E2878C404009452A8 /* MemoryGameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoryGameView.swift; sourceTree = "<group>"; };
 		5CE437202878C51B009452A8 /* Array + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array + Extensions.swift"; sourceTree = "<group>"; };
+		5CE437222878C882009452A8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				5C28F98D284A3A25002B84BC /* MemoryGameViewModel.swift */,
 				5CE437202878C51B009452A8 /* Array + Extensions.swift */,
 				5C25590428045A0A00454ECD /* CardView.swift */,
+				5CE437222878C882009452A8 /* Constants.swift */,
 				5C9D2CCB280330B400F91734 /* Assets.xcassets */,
 				5C9D2CCD280330B400F91734 /* Preview Content */,
 			);
@@ -153,6 +156,7 @@
 				5CE437212878C51B009452A8 /* Array + Extensions.swift in Sources */,
 				5C25590528045A0A00454ECD /* CardView.swift in Sources */,
 				5C28F98C284A37DE002B84BC /* MemoryGame.swift in Sources */,
+				5CE437232878C882009452A8 /* Constants.swift in Sources */,
 				5C9D2CC8280330B100F91734 /* memorizeApp.swift in Sources */,
 				5C28F98E284A3A25002B84BC /* MemoryGameViewModel.swift in Sources */,
 			);
