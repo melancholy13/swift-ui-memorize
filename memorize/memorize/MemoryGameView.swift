@@ -12,17 +12,22 @@ struct MemoryGameView: View {
   @ObservedObject var viewModel: MemoryGameViewModel
   
   var body: some View {
-    ScrollView {
-      LazyVGrid(columns: [GridItem(.adaptive(minimum: 65))]) {
-        ForEach(viewModel.cards) { card in
-          CardView(card).aspectRatio(2/3, contentMode: .fit).onTapGesture {
-            viewModel.choose(card)
-          }
-        }
-      }
-    }
+    AspectVGrid(items: viewModel.cards, aspectRatio: 2/3, content: { card in
+      cardView(for: card)
+    })
     .foregroundColor(.red)
     .padding(.horizontal)
+  }
+  
+  @ViewBuilder 
+  private func cardView(for card: MemoryGameViewModel.Card) -> some View {
+    if card.isMatched && !card.isFaceUp {
+      Rectangle().opacity(0)
+    } else {
+      CardView(card).padding(4).onTapGesture {
+        viewModel.choose(card)
+      }
+    }
   }
 }
 
