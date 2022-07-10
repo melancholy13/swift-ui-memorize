@@ -23,6 +23,9 @@ struct CardView: View {
         if card.isFaceUp {
           shape.fill().foregroundColor(.white)
           shape.strokeBorder(lineWidth: DrawingConstants.lineWidth)
+          PieShape(startAngle: Angle(degrees: 0 - 90), endAngle: Angle(degrees: 110 - 90))
+            .padding(6)
+            .opacity(DrawingConstants.timeTrackerOpacity)
           Text(card.content).font(font(in: geometry.size))
         } else if card.isMatched {
           shape.opacity(0)

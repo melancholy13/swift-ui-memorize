@@ -17,6 +17,7 @@
 		5CE437212878C51B009452A8 /* Array + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE437202878C51B009452A8 /* Array + Extensions.swift */; };
 		5CE437232878C882009452A8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE437222878C882009452A8 /* Constants.swift */; };
 		5CE43725287A4850009452A8 /* AspectVGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE43724287A4850009452A8 /* AspectVGrid.swift */; };
+		5CE43727287B5AEF009452A8 /* PieShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE43726287B5AEF009452A8 /* PieShape.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		5CE437202878C51B009452A8 /* Array + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array + Extensions.swift"; sourceTree = "<group>"; };
 		5CE437222878C882009452A8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		5CE43724287A4850009452A8 /* AspectVGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AspectVGrid.swift; sourceTree = "<group>"; };
+		5CE43726287B5AEF009452A8 /* PieShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieShape.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				5C28F98D284A3A25002B84BC /* MemoryGameViewModel.swift */,
 				5CE437202878C51B009452A8 /* Array + Extensions.swift */,
 				5C25590428045A0A00454ECD /* CardView.swift */,
+				5CE43726287B5AEF009452A8 /* PieShape.swift */,
 				5CE437222878C882009452A8 /* Constants.swift */,
 				5C9D2CCB280330B400F91734 /* Assets.xcassets */,
 				5C9D2CCD280330B400F91734 /* Preview Content */,
@@ -159,6 +162,7 @@
 				5CE4371F2878C404009452A8 /* MemoryGameView.swift in Sources */,
 				5CE437212878C51B009452A8 /* Array + Extensions.swift in Sources */,
 				5C25590528045A0A00454ECD /* CardView.swift in Sources */,
+				5CE43727287B5AEF009452A8 /* PieShape.swift in Sources */,
 				5C28F98C284A37DE002B84BC /* MemoryGame.swift in Sources */,
 				5CE437232878C882009452A8 /* Constants.swift in Sources */,
 				5C9D2CC8280330B100F91734 /* memorizeApp.swift in Sources */,
