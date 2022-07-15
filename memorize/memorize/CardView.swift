@@ -18,25 +18,21 @@ struct CardView: View {
   var body: some View {
     GeometryReader(content: { geometry in
       ZStack {
-        let shape = RoundedRectangle(cornerRadius: DrawingConstants.cornerRadius)
-        
-        if card.isFaceUp {
-          shape.fill().foregroundColor(.white)
-          shape.strokeBorder(lineWidth: DrawingConstants.lineWidth)
-          PieShape(startAngle: Angle(degrees: 0 - 90), endAngle: Angle(degrees: 110 - 90))
-            .padding(6)
-            .opacity(DrawingConstants.timeTrackerOpacity)
-          Text(card.content).font(font(in: geometry.size))
-        } else if card.isMatched {
-          shape.opacity(0)
-        } else {
-          shape.fill()
-        }
+        PieShape(startAngle: Angle(degrees: 0 - 90), endAngle: Angle(degrees: 110 - 90))
+          .padding(6)
+          .opacity(DrawingConstants.timeTrackerOpacity)
+        Text(card.content)
+          .rotationEffect(Angle(degrees: card.isMatched ? 360 : 0))
+          .animation(Animation.easeInOut(duration: 2), value: card.isMatched)
+          .font(Font.system(size: DrawingConstants.fontSize))
+          .scaleEffect(scale(thatFits: geometry.size))
       }
+      .cardify(isFaceUp: card.isFaceUp)
     })
   }
   
-  private func font(in size: CGSize) -> Font {
-    return Font.system(size: min(size.width, size.height) * DrawingConstants.fontScale)
+  private func scale(thatFits size: CGSize) -> CGFloat {
+    min(size.width, size.height) / (DrawingConstants.fontSize / DrawingConstants.fontScale)
   }
+  
 }
