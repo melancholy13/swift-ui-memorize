@@ -48,6 +48,75 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C7FA44F28AC5EBC0025B3BB /* ApplicationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				5C9D2CC7280330B100F91734 /* memorizeApp.swift */,
+				5CE437222878C882009452A8 /* Constants.swift */,
+			);
+			path = ApplicationLayer;
+			sourceTree = "<group>";
+		};
+		5C7FA45028AC5ECB0025B3BB /* ViewLayer */ = {
+			isa = PBXGroup;
+			children = (
+				5C25590428045A0A00454ECD /* CardView.swift */,
+				5CE4371E2878C404009452A8 /* MemoryGameView.swift */,
+			);
+			path = ViewLayer;
+			sourceTree = "<group>";
+		};
+		5C7FA45128AC5EE10025B3BB /* ViewModelLayer */ = {
+			isa = PBXGroup;
+			children = (
+				5C28F98D284A3A25002B84BC /* MemoryGameViewModel.swift */,
+			);
+			path = ViewModelLayer;
+			sourceTree = "<group>";
+		};
+		5C7FA45228AC5EE70025B3BB /* ModelLayer */ = {
+			isa = PBXGroup;
+			children = (
+				5C28F98B284A37DE002B84BC /* MemoryGame.swift */,
+			);
+			path = ModelLayer;
+			sourceTree = "<group>";
+		};
+		5C7FA45328AC5F020025B3BB /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				5CE437282881B0C9009452A8 /* CardifyViewModifier.swift */,
+			);
+			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
+		5C7FA45428AC5F0F0025B3BB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5CE437202878C51B009452A8 /* Array + Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5C7FA45528AC5F790025B3BB /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				5CE43726287B5AEF009452A8 /* PieShape.swift */,
+			);
+			path = Shapes;
+			sourceTree = "<group>";
+		};
+		5C7FA45628AC5FA60025B3BB /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				5C7FA45428AC5F0F0025B3BB /* Extensions */,
+				5C7FA45328AC5F020025B3BB /* ViewModifiers */,
+				5C7FA45528AC5F790025B3BB /* Shapes */,
+				5CE43724287A4850009452A8 /* AspectVGrid.swift */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
 		5C9D2CBB280330B100F91734 = {
 			isa = PBXGroup;
 			children = (
@@ -67,18 +136,13 @@
 		5C9D2CC6280330B100F91734 /* memorize */ = {
 			isa = PBXGroup;
 			children = (
-				5C9D2CC7280330B100F91734 /* memorizeApp.swift */,
-				5C28F98B284A37DE002B84BC /* MemoryGame.swift */,
-				5CE4371E2878C404009452A8 /* MemoryGameView.swift */,
-				5CE43724287A4850009452A8 /* AspectVGrid.swift */,
-				5C28F98D284A3A25002B84BC /* MemoryGameViewModel.swift */,
-				5CE437202878C51B009452A8 /* Array + Extensions.swift */,
-				5C25590428045A0A00454ECD /* CardView.swift */,
-				5CE437282881B0C9009452A8 /* CardifyViewModifier.swift */,
-				5CE43726287B5AEF009452A8 /* PieShape.swift */,
-				5CE437222878C882009452A8 /* Constants.swift */,
-				5C9D2CCB280330B400F91734 /* Assets.xcassets */,
+				5C7FA44F28AC5EBC0025B3BB /* ApplicationLayer */,
+				5C7FA45028AC5ECB0025B3BB /* ViewLayer */,
+				5C7FA45128AC5EE10025B3BB /* ViewModelLayer */,
+				5C7FA45228AC5EE70025B3BB /* ModelLayer */,
+				5C7FA45628AC5FA60025B3BB /* SupportingFiles */,
 				5C9D2CCD280330B400F91734 /* Preview Content */,
+				5C9D2CCB280330B400F91734 /* Assets.xcassets */,
 			);
 			name = memorize;
 			sourceTree = "<group>";
