@@ -11,6 +11,8 @@ struct CardView: View {
   
   private let card: MemoryGameViewModel.Card
   
+  @State private var animatedBonusRemaining: Double = 0
+  
   init(_ card: MemoryGameViewModel.Card) {
     self.card = card
   }
@@ -18,9 +20,22 @@ struct CardView: View {
   var body: some View {
     GeometryReader(content: { geometry in
       ZStack {
-        PieShape(startAngle: Angle(degrees: 0 - 90), endAngle: Angle(degrees: 110 - 90))
-          .padding(6)
-          .opacity(DrawingConstants.timeTrackerOpacity)
+        Group {
+          if card.isConsumingBonusTime {
+            PieShape(startAngle: Angle(degrees: 0 - 90), endAngle: Angle(degrees: (1 - animatedBonusRemaining) * 360 - 90))
+              .onAppear() {
+                animatedBonusRemaining = card.bonusRemaining
+                withAnimation(.linear(duration: card.bonusTimeRemaining)) {
+                  animatedBonusRemaining = 0
+                }
+              }
+          } else {
+            PieShape(startAngle: Angle(degrees: 0 - 90), endAngle: Angle(degrees: (1 - card.bonusRemaining) * 360 - 90))
+          }
+        }
+        .padding(6)
+        .opacity(DrawingConstants.timeTrackerOpacity)
+        
         Text(card.content)
           .rotationEffect(Angle(degrees: card.isMatched ? 360 : 0))
           .animation(Animation.easeInOut(duration: 2), value: card.isMatched)
